@@ -1,4 +1,7 @@
-
+#content{
+	background: grey;
+	min-height: 100%;
+}
 #footer{
 	width: 100%;
 	position: relative;
