@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+
+	<!-- Bootstrap link -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- CSS External styling -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+
+
+	<!-- Start navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Emmanue Sandoy Apura</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav gap-4">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#content2" data-bs-target="#carouselExampleControls" data-bs-slide-to="1">Projects</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#content2" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">Tools</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#content2" data-bs-target="#carouselExampleControls" data-bs-slide-to="2">Contact</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End navbar -->
+
+	<!-- Landing Section Start -->
+	<div id="landing" class="container-fluid">
+		<div class="row d-flex d-grid flex-column flex-sm-row justify-content-center mx-auto gap-5 mt-5">
+			<div  class="col-sm-4 col-md-3">
+				<div class="card border rounded">
+					<div class="card-body flex-column ">
+						<img src=""/>
+						<p>Emmanue Sandoy</p>
+						<p>Full stack Developer</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="card border rounded">
+					<div class="card-body">
+						Hi! I’m a <strong>Full Stack Developer</strong> who enjoys building websites and applications from front to back. I like working with different technologies, figuring out how things work, and turning ideas into something people can actually use. I’m always learning, experimenting with new tools, and improving my skills through different projects. For me, coding is not just about writing code—it’s about solving problems and creating something useful.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Landing Section Start -->
+
+
+	<div id="content" class="container flex-column flex-sm-row d-flex justify-content-center">
+		<div class="row btn-group d-flex d-grid flex-row flex-md-column gap-2 mx-auto" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-dark col" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">Tools</button>
+			<button type="button" class="btn btn-dark col" data-bs-target="#carouselExampleControls" data-bs-slide-to="1">Projects</button>
+			<button type="button" class="btn btn-dark col2" data-bs-target="#carouselExampleControls" data-bs-slide-to="2">Contact</button>
+		</div>
+
+		<div id="content2" class="row flex-column flex-sm-row d-flex flex-fill p-2 justify-content-center mx-auto">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner" >
+					<div class="carousel-item active">
+						<h2>Tools</h2>
+						<div class="container-fluid flex-column d-flex d-column">
+							<a class="tool-item1 " href="#tool-item1" >E-commerce API Documentation.</a>
+							<a class="tool-item2 " href="#tool-item2" >Course Booking API Documentation.</a>
+							<a class="tool-item3 " href="#tool-item3" >Course Booking App.</a>
+							<a class="tool-item4 " href="#tool-item4" >E-commerce App.</a>
+							<a class="tool-item5 " href="#tool-item5" >Airline Booking System Mockup.</a>
+							<a class="tool-item6 " href="#tool-item6" >Airline Booking System Prototype.</a>
+							<a class="tool-item7 " href="#tool-item7" >Short Courses Capstone.</a>
+						</div>
+					</div>
+					<div class="carousel-item" >
+						<h2>Projects</h2>	
+						<img src="" class="d-block " alt="...">
+					</div>
+					<div class="carousel-item ">
+						<div class="row d-flex">
+							<div class="col my-3 flex-column  mx-5 text-center">
+								<div class="form-floating my-2">
+									<input type="email" class="form-control" id="floatingInput" placeholder="Fullname">
+									<label for="floatingInput">Name</label>
+								</div>
+
+								<div class="form-floating my-2">
+									<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+									<label for="floatingTextarea">Comments</label>
+								</div>
+								<button type="button" class="btn btn-primary ">Send</button>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+				<button class="carousel-control-prev justify-content-start bg-secondary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next justify-content-end bg-secondary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
+		
+	</div>
+	<!-- Content End -->
+
+
+	<!-- Start - Section to show all detailes for tools and thei corresponding placeholder -->
+	<h1 id="tools">Tools</h1>
+	<div class="container my-2" id="tools-items" >
+		<div class="row d-grid d-flex">
+			<div class="card col-auto" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item1">
+					<h5 class="card-title">E-commerce API Documentation</h5>
+					<p class="card-text">Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.</p>
+					<span class="placeholder"></span>
+				</div>
+			</div>
+
+			<div class="card " style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item1\2">
+					<h5 class="card-title">Course Booking API Documentation</h5>
+					<p class="card-text">RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+					<input type="file" class="form-control" id="floating-tools-item2" >
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item3">
+					<h5 class="card-title">Course Booking App</h5>
+					<p class="card-text">Course booking App A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+					<span class="placeholder"></span>
+				</div>
+			</div>
+
+			<div class="card " style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item4">
+					<h5 class="card-title">E-commerce App</h5>
+					<p class="card-text">MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.</p>
+					<span class="placeholder"></span>
+				</div>
+			</div>
+
+			<div class="card " style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item5">
+					<h5 class="card-title">Airline Booking System Mockup</h5>
+					<p class="card-text">Side Project: Conceptual design showcasing an intuitive Ul for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item6">
+					<h5 class="card-title">Airline Booking System Prototype</h5>
+					<p class="card-text">Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row d-flex " >
+
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" id="tool-item7">
+					<h5 class="card-title">Short Courses Capstone</h5>
+					<p class="card-text">Placeholder for your Short courses capstone project.</p>
+				</div>
+			</div>
+
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Short Courses Capstone</h5>
+					<p class="card-text">Placeholder for your Short courses capstone project.</p>
+				</div>
+			</div>
+
+
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body" >
+					<h5 class="card-title">Short Courses Capstone</h5>
+					<p class="card-text">Placeholder for your Short courses capstone project.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- End - Section to show all detailes for tools and thei corresponding placeholder -->
+
+	<!-- Tools section - Start -->
+	<h1>Tools</h1>
+	<!-- Content for tools -->
+	<div class="container">
+		<div class="row d-column d-sm-flex">
+			<div>
+				<h3>Front End</h3>
+				<img src=""/>
+				<img src=""/>
+				<img src=""/>
+			</div>
+
+
+			<div>
+				<h3>MEVN</h3>
+				<img src="">
+				<img src="">
+				<img src="">
+			</div>
+
+			<div>
+				<h3>Other tools</h3>
+				<img src="">
+				<img src="">
+				<img src="">
+			</div>
+		</div>
+		
+	</div>
+	<!-- Tools section -End -->
+	<!-- footer start -->
+
+
+	<footer class="container-fluid">
+		<div id="footer">
+			<div class="row bg-secondary" id="footer-content">
+				<p class="d-sm-none">&#169;2026 Emmanue S. Apura. Built for Mobile iOS<p></p>
+
+
+				<div class="d-none d-sm-flex d-md-none justify-content-center mx-auto">
+					<p><strong>Emmanue Sandoy Apura</strong></p>
+					<div class="mx-5">
+						<a href="">Email</a>
+						<a href="https://github.com/emmanueapura/">Github</a>
+						<a href="www.linkedin.com/in/emmanue-sandoy-apura-25775b125">LinkedIn</a>
+					</div>
+					<p>&#169;2026.All right protected</p>
+				</div>
+
+				<div class="d-none d-md-flex flex-md-column col-4">
+					<p><strong>Emmanue Sandoy Apura</strong></p>
+					<p>Crafting thoughful digital interfaces from concept to </p>
+				</div>
+
+				<div class="d-none d-md-flex col-auto justify-content-center tex-center gap-4 col-4">
+					<a href="">emmanueapura@gmail.com</a>
+					<a href="https://github.com/emmanueapura/">Github</a>
+					<a href="www.linkedin.com/in/emmanue-sandoy-apura-25775b125">LinkedIn</a>
+					<a href="https://www.facebook.com/emmanue.apurasandoy">Facebook</a>
+				</div>
+				<p class="d-none d-md-flex justify-content-end text-end col-4">&#169;2026.All right protected</p>
+			</div>
+		</div>
+
+
+	</footer>
+	<!-- footer end -->
+
+
+	<!-- Bootstrap script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>	

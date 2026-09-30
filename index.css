@@ -1,0 +1,14 @@
+
+#footer{
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	start:0;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3%;
+}
+h1,h3{
+	text-align: center;
+}
