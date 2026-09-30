@@ -72,7 +72,7 @@
 
 
 	<div id="content" class="container flex-column flex-sm-row d-flex justify-content-center">
-		<div class="row btn-group d-flex d-grid flex-row flex-md-column gap-2 mx-auto" role="group" aria-label="Basic example">
+		<div class="row btn-group d-flex d-grid flex-row flex-sm-column gap-2 mx-auto" role="group" aria-label="Basic example">
 			<button type="button" class="btn btn-dark col" data-bs-target="#carouselExampleControls" data-bs-slide-to="0">Tools</button>
 			<button type="button" class="btn btn-dark col" data-bs-target="#carouselExampleControls" data-bs-slide-to="1">Projects</button>
 		</div>
@@ -204,7 +204,7 @@
 	<h1>Tools</h1>
 	<!-- Content for tools -->
 	<div class="container"  id="tools">
-		<div class="row d-column d-sm-flex">
+		<div class="row flex-column d-sm-flex">
 			<div>
 				<h3>Front End</h3>
 				<img src=""/>
@@ -233,60 +233,64 @@
 	<!-- footer start -->
 
 	<!-- START - Contact section -->
-	<div class="container-fluid "id="contact">
+	<div class="container-fluid" id="contact">
 		<h1>Contact</h1>
-		<div class="row d-flex my-3 flex-row  justify-content-center mx-auto" >
-			<div id="left-contact" class=" d-flex col-4" >
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1004778.3042661361!2d123.02251544745312!3d10.348661465670128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a973be8037a443%3A0x840b848d4ec2c6c4!2sCebu!5e0!3m2!1sen!2sph!4v1790752283604!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-			</div>
-			<div class=" justify-content-center mx-auto d-flex flex-column gap-4 d-flex col-8" id="right-contact">
-				<input type="text" class="form-control" id="username" placeholder="First Name M.I. Name">
-				<input type="email" class="form-control" id="user-email" placeholder="name@example.com">
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
-				<button type="submit" class="btn btn-primary text-end" >Sumbit</button>
+
+		<div id="contact-details" class="d-flex flex-column flex-sm-row my-2">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1004778.3042661361!2d123.02251544745317!3d10.348661465670128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a973be8037a443%3A0x840b848d4ec2c6c4!2sCebu!5e0!3m2!1sen!2sph!4v1790755865910!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+			<div class="mx-auto d-flex flex-column col-6" id="right-contact">
+				<input  type="text" class="form-control my-2" id="username" placeholder="First Name M.I. Name">
+
+				<input type="email" class="form-control my-2" id="user-email" placeholder="name@example.com">
+
+				<textarea class="form-control my-2 " id="exampleFormControlTextarea1" rows="10" placeholder="Message">
+				</textarea>
+
+				<button type="submit" class="btn btn-primary grid">
+					Submit
+				</button>
 			</div>
 		</div>
 
-	</div>
-
-	<!-- END - Contact section -->
+<!-- END - Contact section -->
 
 
-	<footer class="container-fluid">
-		<div id="footer">
-			<div class="row" id="footer-content">
-				<p class="d-sm-none">&#169;2026 Emmanue S. Apura. Built for Mobile iOS<p></p>
-				<div class="d-none d-sm-flex d-md-none justify-content-center mx-auto">
-					<p><strong>Emmanue Sandoy Apura</strong></p>
-					<div class="mx-5">
-						<a href="">Email</a>
-						<a href="https://github.com/emmanueapura/">Github</a>
-						<a href="www.linkedin.com/in/emmanue-sandoy-apura-25775b125">LinkedIn</a>
-					</div>
-					<p>&#169;2026.All right protected</p>
-				</div>
-
-				<div class="d-none d-md-flex flex-md-column col-4">
-					<p><strong>Emmanue Sandoy Apura</strong></p>
-					<p>Crafting thoughful digital interfaces from concept to </p>
-				</div>
-
-				<div class="d-none d-md-flex col-auto justify-content-center tex-center gap-4 col-4">
-					<a href="">emmanueapura@gmail.com</a>
+<footer class="container-fluid bg-secondary">
+	<div id="footer">
+		<div class="row" id="footer-content">
+			<p class="d-sm-none">&#169;2026 Emmanue S. Apura. Built for Mobile iOS<p></p>
+			<div class="d-none d-sm-flex d-md-none justify-content-center mx-auto">
+				<p><strong>Emmanue Sandoy Apura</strong></p>
+				<div class="mx-5">
+					<a href="">Email</a>
 					<a href="https://github.com/emmanueapura/">Github</a>
 					<a href="www.linkedin.com/in/emmanue-sandoy-apura-25775b125">LinkedIn</a>
-					<a href="https://www.facebook.com/emmanue.apurasandoy">Facebook</a>
 				</div>
-				<p class="d-none d-md-flex justify-content-end text-end col-4">&#169;2026.All right protected</p>
+				<p>&#169;2026.All right protected</p>
 			</div>
+
+			<div class="d-none d-md-flex flex-md-column col-4">
+				<p><strong>Emmanue Sandoy Apura</strong></p>
+				<p>Crafting thoughful digital interfaces from concept to </p>
+			</div>
+
+			<div class="d-none d-md-flex col-auto justify-content-center tex-center gap-4 col-4">
+				<a href="">emmanueapura@gmail.com</a>
+				<a href="https://github.com/emmanueapura/">Github</a>
+				<a href="www.linkedin.com/in/emmanue-sandoy-apura-25775b125">LinkedIn</a>
+				<a href="https://www.facebook.com/emmanue.apurasandoy">Facebook</a>
+			</div>
+			<p class="d-none d-md-flex justify-content-end text-end col-4">&#169;2026.All right protected</p>
 		</div>
+	</div>
 
 
-	</footer>
-	<!-- footer end -->
+</footer>
+<!-- footer end -->
 
 
-	<!-- Bootstrap script -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Bootstrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>	

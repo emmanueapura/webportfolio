@@ -12,6 +12,10 @@
 .carousel-control-next {
     width: 3%;
 }
+
+#username,#user-email{
+	min-width: 45%;
+}
 h1,h3{
 	text-align: center;
 }
