@@ -240,21 +240,26 @@
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1004778.3042661361!2d123.02251544745317!3d10.348661465670128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a973be8037a443%3A0x840b848d4ec2c6c4!2sCebu!5e0!3m2!1sen!2sph!4v1790755865910!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 			<div class="justify-content-center mx-auto flex-folumn gap-2" id="contact">
-				<div class="input-group">
-					<input  type="text" class="form-control" id="username" placeholder="First Name M.I. Name">
-				</div>
-				
-				<div class="input-group">
-					<input type="email" class="form-control" id="user-email" placeholder="name@example.com">
-				</div class="input-group">
-				
-				<div class="input-group">
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Message"></textarea>
-				</div>
-				
-				<div class="input-group">
-					<button type="submit" class="btn btn-primary">Submit</button>
-				</div>
+				<form>
+					<form>
+						<div class="form-floating mb-3">
+							<input type="text" class="form-control" id="username" placeholder="First Name M.I. Name">
+							<label for="username">Input name</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control" id="user-email" placeholder="name@example.com">
+							<label for="user-email">Email</label>
+						</div>
+
+						<div class="form-floating mb-3">
+							<textarea class="form-control" id="user-textarea" placeholder="Message" style="height: 150px"></textarea>
+							<label for="user-textarea">Message</label>
+						</div>
+
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</form>
 				
 			</div>
 		</div>
