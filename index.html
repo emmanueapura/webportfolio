@@ -20,7 +20,7 @@
 
 
 	<!-- Start navbar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">Emmanue Sandoy Apura</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,8 +93,7 @@
 						</div>
 					</div>
 					<div class="carousel-item" >
-						<h2>Projects</h2>	
-						<img src="" class="d-block " alt="...">
+						<h2>Projects</h2>
 					</div>
 				</div>
 				<button class="carousel-control-prev justify-content-start bg-secondary" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -117,7 +116,7 @@
 	<h1 id="projects">Projects</h1>
 	<div class="container my-2" id="tools-items" >
 		<div class="row d-grid d-flex">
-			<div class="card col-auto" >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item1">
 					<h5 class="card-title">E-commerce API Documentation</h5>
@@ -126,7 +125,7 @@
 				</div>
 			</div>
 
-			<div class="card " >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item1\2">
 					<h5 class="card-title">Course Booking API Documentation</h5>
@@ -135,7 +134,7 @@
 				</div>
 			</div>
 
-			<div class="card" >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item3">
 					<h5 class="card-title">Course Booking App</h5>
@@ -144,7 +143,7 @@
 				</div>
 			</div>
 
-			<div class="card " >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item4">
 					<h5 class="card-title">E-commerce App</h5>
@@ -153,7 +152,7 @@
 				</div>
 			</div>
 
-			<div class="card " >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item5">
 					<h5 class="card-title">Airline Booking System Mockup</h5>
@@ -161,7 +160,7 @@
 				</div>
 			</div>
 
-			<div class="card" >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item6">
 					<h5 class="card-title">Airline Booking System Prototype</h5>
@@ -172,7 +171,7 @@
 		</div>
 		<div class="row d-flex " >
 
-			<div class="card" >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" id="tool-item7">
 					<h5 class="card-title">Short Courses Capstone</h5>
@@ -180,7 +179,7 @@
 				</div>
 			</div>
 
-			<div class="card" >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body">
 					<h5 class="card-title">Short Courses Capstone</h5>
@@ -189,7 +188,7 @@
 			</div>
 
 
-			<div class="card" >
+			<div class="card col-3" >
 				<img src="..." class="card-img-top" alt="...">
 				<div class="card-body" >
 					<h5 class="card-title">Short Courses Capstone</h5>
@@ -234,18 +233,18 @@
 	<!-- footer start -->
 
 	<!-- START - Contact section -->
-	<div class="container "id="contact">
-		<div class="row d-flex col my-3 flex-column  mx-5 text-center" >
-			<div class="mb-3">
-				<label for="exampleFormControlInput1" class="form-label">Email address</label>
-				<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-				<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+	<div class="container-fluid "id="contact">
+		<h1>Contact</h1>
+		<div class="row d-flex my-3 flex-row  justify-content-center mx-auto" >
+			<div id="left-contact" class=" d-flex col-4" >
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1004778.3042661361!2d123.02251544745312!3d10.348661465670128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a973be8037a443%3A0x840b848d4ec2c6c4!2sCebu!5e0!3m2!1sen!2sph!4v1790752283604!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 			</div>
-
-		</div>
-		<div class="row d-flex col-1 justify-content-center mx-auto">
-			<button type="submit" class="btn btn-primary" >Send</button>
+			<div class=" justify-content-center mx-auto d-flex flex-column gap-4 d-flex col-8" id="right-contact">
+				<input type="text" class="form-control" id="username" placeholder="First Name M.I. Name">
+				<input type="email" class="form-control" id="user-email" placeholder="name@example.com">
+				<textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+				<button type="submit" class="btn btn-primary text-end" >Sumbit</button>
+			</div>
 		</div>
 
 	</div>
@@ -255,10 +254,8 @@
 
 	<footer class="container-fluid">
 		<div id="footer">
-			<div class="row bg-secondary" id="footer-content">
+			<div class="row" id="footer-content">
 				<p class="d-sm-none">&#169;2026 Emmanue S. Apura. Built for Mobile iOS<p></p>
-
-
 				<div class="d-none d-sm-flex d-md-none justify-content-center mx-auto">
 					<p><strong>Emmanue Sandoy Apura</strong></p>
 					<div class="mx-5">
