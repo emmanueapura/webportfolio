@@ -13,8 +13,8 @@
     width: 3%;
 }
 
-#username,#user-email{
-	min-width: 45%;
+#contact button{
+	align-items: center;
 }
 h1,h3{
 	text-align: center;
